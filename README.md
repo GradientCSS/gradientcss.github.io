@@ -1,4 +1,6 @@
 # Welcome to Gradient CSS
+![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<latifsuudhaqiqi1:srj8YLWcBioq5JxrizDp>)
+
 
 ## Gradient CSS was inspired by UIGradients.com and it was generated into this CSS.
 
