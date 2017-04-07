@@ -1,6 +1,4 @@
 # Welcome to Gradient CSS
-![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<latifsuudhaqiqi1:srj8YLWcBioq5JxrizDp>)
-
 
 ## Gradient CSS was inspired by UIGradients.com and it was generated into this CSS.
 
@@ -14,3 +12,7 @@
 2. Pick a background name from UIgradient.com and if it was 2 words you can separate it with - (hypen) ex: `facebook-messanger`
 3. Add it as class ex: `<div class="facebook-messanger> Gradient CSS Background will shown as background </div>`
 4. Enjoy!.
+
+## We are using [BrowserStack](https://www.browserstack.com) to make Gradient CSS always running on any Devices and Browsers.
+
+![Browser Stack](https://cdn.filestackcontent.com/R7vycHSZRB2sxWJiYcPm)
