@@ -1,7 +1,8 @@
 /*
 Crafted by: https://www.okabrionz.com - Oka bRionZ
-Dedicated as: https://www.craftbootstrap.com - Craft Bootstrap
-Credits:
+Dedicated for: https://www.craftbootstrap.com - Craft Bootstrap
+Sponsored by: https://www.browserstack.com - Browser Stack
+Attributions:
     https://uigradients.com - UI Gradients
 */
 
@@ -18,10 +19,6 @@ Credits:
 }
 
 .facebook {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background: #00c6ff;
     background: -webkit-linear-gradient(to left, #00c6ff, #0072ff);
     background: linear-gradient(to left, #00c6ff, #0072ff);
@@ -160,9 +157,9 @@ Credits:
 }
 
 .deep-space {
-    background: #4CA1AF;
-    background: -webkit-linear-gradient(to left, #4CA1AF, #C4E0E5);
-    background: linear-gradient(to left, #4CA1AF, #C4E0E5);
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 .dark-skies {
