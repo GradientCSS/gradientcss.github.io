@@ -1,0 +1,51 @@
+.TH "HUGO\-UNDRAFT" "1" "Apr 2017" "Hugo 0.18.1" "Hugo Manual" 
+.nh
+.ad l
+
+
+.SH NAME
+.PP
+hugo\-undraft \- Undraft changes the content's draft status from 'True' to 'False'
+
+
+.SH SYNOPSIS
+.PP
+\fBhugo undraft path/to/content\fP
+
+
+.SH DESCRIPTION
+.PP
+Undraft changes the content's draft status from 'True' to 'False'
+and updates the date to the current date and time.
+If the content's draft status is 'False', nothing is done.
+
+
+.SH OPTIONS INHERITED FROM PARENT COMMANDS
+.PP
+\fB\-\-config\fP=""
+    config file (default is path/config.yaml|json|toml)
+
+.PP
+\fB\-\-log\fP[=false]
+    Enable Logging
+
+.PP
+\fB\-\-logFile\fP=""
+    Log File path (if set, logging enabled automatically)
+
+.PP
+\fB\-\-quiet\fP[=false]
+    build in quiet mode
+
+.PP
+\fB\-v\fP, \fB\-\-verbose\fP[=false]
+    verbose output
+
+.PP
+\fB\-\-verboseLog\fP[=false]
+    verbose logging
+
+
+.SH SEE ALSO
+.PP
+\fBhugo(1)\fP

@@ -1,0 +1,93 @@
+.TH "HUGO\-GEN\-AUTOCOMPLETE" "1" "Apr 2017" "Hugo 0.18.1" "Hugo Manual" 
+.nh
+.ad l
+
+
+.SH NAME
+.PP
+hugo\-gen\-autocomplete \- Generate shell autocompletion script for Hugo
+
+
+.SH SYNOPSIS
+.PP
+\fBhugo gen autocomplete\fP
+
+
+.SH DESCRIPTION
+.PP
+Generates a shell autocompletion script for Hugo.
+
+.PP
+NOTE: The current version supports Bash only.
+      This should work for *nix systems with Bash installed.
+
+.PP
+By default, the file is written directly to /etc/bash\_completion.d
+for convenience, and the command may need superuser rights, e.g.:
+
+.PP
+.RS
+
+.nf
+$ sudo hugo gen autocomplete
+
+.fi
+.RE
+
+.PP
+Add \fB\fC\-\-completionfile=/path/to/file\fR flag to set alternative
+file\-path and name.
+
+.PP
+Logout and in again to reload the completion scripts,
+or just source them in directly:
+
+.PP
+.RS
+
+.nf
+$ . /etc/bash\_completion
+
+.fi
+.RE
+
+
+.SH OPTIONS
+.PP
+\fB\-\-completionfile\fP="/etc/bash\_completion.d/hugo.sh"
+    Autocompletion file
+
+.PP
+\fB\-\-type\fP="bash"
+    Autocompletion type (currently only bash supported)
+
+
+.SH OPTIONS INHERITED FROM PARENT COMMANDS
+.PP
+\fB\-\-config\fP=""
+    config file (default is path/config.yaml|json|toml)
+
+.PP
+\fB\-\-log\fP[=false]
+    Enable Logging
+
+.PP
+\fB\-\-logFile\fP=""
+    Log File path (if set, logging enabled automatically)
+
+.PP
+\fB\-\-quiet\fP[=false]
+    build in quiet mode
+
+.PP
+\fB\-v\fP, \fB\-\-verbose\fP[=false]
+    verbose output
+
+.PP
+\fB\-\-verboseLog\fP[=false]
+    verbose logging
+
+
+.SH SEE ALSO
+.PP
+\fBhugo\-gen(1)\fP

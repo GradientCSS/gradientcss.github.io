@@ -1,0 +1,74 @@
+.TH "HUGO\-NEW" "1" "Apr 2017" "Hugo 0.18.1" "Hugo Manual" 
+.nh
+.ad l
+
+
+.SH NAME
+.PP
+hugo\-new \- Create new content for your site
+
+
+.SH SYNOPSIS
+.PP
+\fBhugo new [path]\fP
+
+
+.SH DESCRIPTION
+.PP
+Create a new content file and automatically set the date and title.
+It will guess which kind of file to create based on the path provided.
+
+.PP
+You can also specify the kind with \fB\fC\-k KIND\fR\&.
+
+.PP
+If archetypes are provided in your theme or site, they will be used.
+
+
+.SH OPTIONS
+.PP
+\fB\-\-editor\fP=""
+    edit new content with this editor, if provided
+
+.PP
+\fB\-f\fP, \fB\-\-format\fP="toml"
+    frontmatter format
+
+.PP
+\fB\-k\fP, \fB\-\-kind\fP=""
+    Content type to create
+
+.PP
+\fB\-s\fP, \fB\-\-source\fP=""
+    filesystem path to read files relative from
+
+
+.SH OPTIONS INHERITED FROM PARENT COMMANDS
+.PP
+\fB\-\-config\fP=""
+    config file (default is path/config.yaml|json|toml)
+
+.PP
+\fB\-\-log\fP[=false]
+    Enable Logging
+
+.PP
+\fB\-\-logFile\fP=""
+    Log File path (if set, logging enabled automatically)
+
+.PP
+\fB\-\-quiet\fP[=false]
+    build in quiet mode
+
+.PP
+\fB\-v\fP, \fB\-\-verbose\fP[=false]
+    verbose output
+
+.PP
+\fB\-\-verboseLog\fP[=false]
+    verbose logging
+
+
+.SH SEE ALSO
+.PP
+\fBhugo(1)\fP, \fBhugo\-new\-site(1)\fP, \fBhugo\-new\-theme(1)\fP

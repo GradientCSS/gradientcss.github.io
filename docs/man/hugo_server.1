@@ -1,0 +1,197 @@
+.TH "HUGO\-SERVER" "1" "Apr 2017" "Hugo 0.18.1" "Hugo Manual" 
+.nh
+.ad l
+
+
+.SH NAME
+.PP
+hugo\-server \- A high performance webserver
+
+
+.SH SYNOPSIS
+.PP
+\fBhugo server\fP
+
+
+.SH DESCRIPTION
+.PP
+Hugo provides its own webserver which builds and serves the site.
+While hugo server is high performance, it is a webserver with limited options.
+Many run it in production, but the standard behavior is for people to use it
+in development and use a more full featured server such as Nginx or Caddy.
+
+.PP
+\&'hugo server' will avoid writing the rendered and served content to disk,
+preferring to store it in memory.
+
+.PP
+By default hugo will also watch your files for any changes you make and
+automatically rebuild the site. It will then live reload any open browser pages
+and push the latest content to them. As most Hugo sites are built in a fraction
+of a second, you will be able to save and see your changes nearly instantly.
+
+
+.SH OPTIONS
+.PP
+\fB\-\-appendPort\fP[=true]
+    append port to baseURL
+
+.PP
+\fB\-b\fP, \fB\-\-baseURL\fP=""
+    hostname (and path) to the root, e.g. 
+\[la]http://spf13.com/\[ra]
+
+.PP
+\fB\-\-bind\fP="127.0.0.1"
+    interface to which the server will bind
+
+.PP
+\fB\-D\fP, \fB\-\-buildDrafts\fP[=false]
+    include content marked as draft
+
+.PP
+\fB\-E\fP, \fB\-\-buildExpired\fP[=false]
+    include expired content
+
+.PP
+\fB\-F\fP, \fB\-\-buildFuture\fP[=false]
+    include content with publishdate in the future
+
+.PP
+\fB\-\-cacheDir\fP=""
+    filesystem path to cache directory. Defaults: $TMPDIR/hugo\_cache/
+
+.PP
+\fB\-\-canonifyURLs\fP[=false]
+    if true, all relative URLs will be canonicalized using baseURL
+
+.PP
+\fB\-\-cleanDestinationDir\fP[=false]
+    Remove files from destination not found in static directories
+
+.PP
+\fB\-c\fP, \fB\-\-contentDir\fP=""
+    filesystem path to content directory
+
+.PP
+\fB\-d\fP, \fB\-\-destination\fP=""
+    filesystem path to write files to
+
+.PP
+\fB\-\-disable404\fP[=false]
+    Do not render 404 page
+
+.PP
+\fB\-\-disableLiveReload\fP[=false]
+    watch without enabling live browser reload on rebuild
+
+.PP
+\fB\-\-disableRSS\fP[=false]
+    Do not build RSS files
+
+.PP
+\fB\-\-disableSitemap\fP[=false]
+    Do not build Sitemap file
+
+.PP
+\fB\-\-enableGitInfo\fP[=false]
+    Add Git revision, date and author info to the pages
+
+.PP
+\fB\-\-forceSyncStatic\fP[=false]
+    Copy all files when static is changed.
+
+.PP
+\fB\-\-i18n\-warnings\fP[=false]
+    Print missing translations
+
+.PP
+\fB\-\-ignoreCache\fP[=false]
+    Ignores the cache directory
+
+.PP
+\fB\-l\fP, \fB\-\-layoutDir\fP=""
+    filesystem path to layout directory
+
+.PP
+\fB\-\-meminterval\fP="100ms"
+    interval to poll memory usage (requires \-\-memstats), valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h".
+
+.PP
+\fB\-\-memstats\fP=""
+    log memory usage to this file
+
+.PP
+\fB\-\-noChmod\fP[=false]
+    Don't sync permission mode of files
+
+.PP
+\fB\-\-noTimes\fP[=false]
+    Don't sync modification time of files
+
+.PP
+\fB\-\-pluralizeListTitles\fP[=true]
+    Pluralize titles in lists using inflect
+
+.PP
+\fB\-p\fP, \fB\-\-port\fP=1313
+    port on which the server will listen
+
+.PP
+\fB\-\-preserveTaxonomyNames\fP[=false]
+    Preserve taxonomy names as written ("Gérard Depardieu" vs "gerard\-depardieu")
+
+.PP
+\fB\-\-renderToDisk\fP[=false]
+    render to Destination path (default is render to memory \& serve from there)
+
+.PP
+\fB\-s\fP, \fB\-\-source\fP=""
+    filesystem path to read files relative from
+
+.PP
+\fB\-\-stepAnalysis\fP[=false]
+    display memory and timing of different steps of the program
+
+.PP
+\fB\-t\fP, \fB\-\-theme\fP=""
+    theme to use (located in /themes/THEMENAME/)
+
+.PP
+\fB\-\-uglyURLs\fP[=false]
+    if true, use /filename.html instead of /filename/
+
+.PP
+\fB\-w\fP, \fB\-\-watch\fP[=true]
+    watch filesystem for changes and recreate as needed
+
+
+.SH OPTIONS INHERITED FROM PARENT COMMANDS
+.PP
+\fB\-\-config\fP=""
+    config file (default is path/config.yaml|json|toml)
+
+.PP
+\fB\-\-log\fP[=false]
+    Enable Logging
+
+.PP
+\fB\-\-logFile\fP=""
+    Log File path (if set, logging enabled automatically)
+
+.PP
+\fB\-\-quiet\fP[=false]
+    build in quiet mode
+
+.PP
+\fB\-v\fP, \fB\-\-verbose\fP[=false]
+    verbose output
+
+.PP
+\fB\-\-verboseLog\fP[=false]
+    verbose logging
+
+
+.SH SEE ALSO
+.PP
+\fBhugo(1)\fP
